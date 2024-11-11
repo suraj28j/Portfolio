@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav{
+    display: grid;
+    grid-template-columns: 55% 5% 40% ;
+    align-items: center;
+    /* border: 1px solid; */
+    height: 3rem;
+}
+nav h2{
+    margin-left: 5rem;
+}
+nav ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* border: 1px solid; */
+}
+
+nav img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}

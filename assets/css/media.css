@@ -1,0 +1,24 @@
+@media screen and (max-width:768px) {
+    nav{
+        grid-template-columns: 90% 10%;
+    }
+    nav h2{
+        margin-left: 1rem;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100vw;
+        visibility: hidden;
+    }
+    nav ul li{
+        height: 1.8rem;
+    }
+    nav ul li a{
+        margin-left: 1rem;
+    }
+    nav img{
+        visibility: visible;
+    }
+}
