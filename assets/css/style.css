@@ -29,6 +29,7 @@ header{
     height: 4rem;
     position: fixed;
     top: 0;left: 0;right: 0;
+    z-index: 2;
 }
 header h2{
     margin-left: 5rem;
@@ -62,9 +63,10 @@ header i{
 #introduction div:nth-child(2){
    display: flex;
    justify-content: center;
+   /* border: 2px solid; */
 }
-#introduction div:nth-child(2) img{
-    width: 20rem;
-    height: 20rem;
+#introduction img{
+    width: 18rem;
+    height: 18rem;
     clip-path: circle(50%);
 }
