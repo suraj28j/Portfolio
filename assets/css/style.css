@@ -33,7 +33,7 @@ header {
     display: grid;
     grid-template-columns: 55% 5% 40%;
     align-items: center;
-    /* border: 1px solid; */
+    /* border: 1px solid red; */
     height: 4rem;
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ header {
 }
 
 header h2 {
-    margin-left: 5rem;
+    margin-left: 10rem;
     font-size: 2rem;
 }
 
@@ -72,26 +72,40 @@ header i {
 
 
 
+/*  ------------ Main ------------ */
 
-/*  -------------------- Main --------------------  */
 
-/* ---- Introduction Start ---- */
+
+/* ------ Introduction Start ------ */
 #introduction {
-    margin: 35vh 6rem;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: 50% 50%;
+    /* border: 1px solid; */
+    height: 100vh;
+    align-items: center;
 }
 
-#introduction div:first-child h1 {
+#introduction div:first-child {
+    margin-left: 10rem;
+}
+
+#introduction h1 {
     font-size: 3rem;
 }
 
-#introduction div:first-child h1,
+#introduction h1,
 h2,
-p,
-#icons,
-button {
+p {
     margin-top: 1rem;
+}
+
+#icons {
+    margin-top: 2rem;
+}
+
+#introduction button {
+    margin-top: 3rem;
 }
 
 #introduction span {
@@ -128,6 +142,7 @@ a:nth-child(4) {
     margin-left: 20px;
 }
 
+
 .button {
     margin-top: 1.5rem;
     padding: 10px 9px 9px 9px;
@@ -144,35 +159,62 @@ a:nth-child(4) {
     box-shadow: 0px 0px 0px var(--text-color2);
 }
 
-/* ---- Introduction End ---- */
+/* ------ Introduction End ------ */
 
-/* About Start */
-#about{
+/* ------ About Start ------ */
+#about {
     display: grid;
     grid-template-columns: 40% 60%;
-    /* margin: 2rem 6rem ;  */
     align-items: center;
     background-color: var(--bg-color2);
     height: 100vh;
-    /* border: 1px solid; */
 }
-#about div:first-child{
+
+#about div:first-child {
     /* border: 1px solid; */
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 10rem;
+    height: 20rem;
 }
-#img-container{
-    /* width: 15rem; */
-    height:20rem;
-    border: 7px double var(--text-color2);
+
+#about img {
     border-radius: 10px;
-    /* background-color:goldenrod */
+    border: 7px double var(--text-color2);
 }
-#about img{
-    width: 100%;
-    height:100%;
+
+#about div:nth-child(2) {
+    margin-right: 6rem;
 }
-#about div:nth-child(2) h2{
+
+#about h2 {
     font-size: 2rem;
 }
-/* About End */
+
+/* ------ About End ------ */
+
+
+/* ------ services Start ------ */
+#services {
+    width: 100%;
+    height: 80vh;
+}
+
+#services h2 {
+    margin: 5rem 10rem
+}
+
+#services>div {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 10rem;
+}
+
+.service {
+    width: 25rem;
+    height: 22rem;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+/* ------ services End ------ */

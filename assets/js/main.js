@@ -9,12 +9,12 @@ hamburger.addEventListener('click', () => {
     if (click === false) {
         navList.style.display = 'block';
         click = true;
-        introduction.style.marginTop = '250px';
+        // introduction.style.marginTop = '250px';
     } else {
         navList.style.display = 'none'
         click = false;
-        introduction.style.marginTop = '100px';
-        window.scrollTo(0,0);
+        // introduction.style.marginTop = '100px';
+        // window.scrollTo(0,0);
     }
 })
 
