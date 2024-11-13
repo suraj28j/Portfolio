@@ -65,7 +65,8 @@ header ul a:hover {
 header i {
     cursor: pointer;
     visibility: hidden;
-    width: 20%;
+    width: 60%;
+    font-size: x-large;
 }
 
 /* ---------- Header End --------- */
@@ -81,7 +82,6 @@ header i {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    /* border: 1px solid; */
     height: 100vh;
     align-items: center;
 }
@@ -92,20 +92,11 @@ header i {
 
 #introduction h1 {
     font-size: 3rem;
+    margin: 0.5rem 0rem;
 }
 
-#introduction h1,
-h2,
-p {
-    margin-top: 1rem;
-}
-
-#icons {
+#icons,#introduction button {
     margin-top: 2rem;
-}
-
-#introduction button {
-    margin-top: 3rem;
 }
 
 #introduction span {
@@ -115,7 +106,6 @@ p {
 #introduction div:nth-child(2) {
     display: flex;
     justify-content: center;
-    /* border: 2px solid; */
 }
 
 #introduction img {
@@ -161,6 +151,7 @@ a:nth-child(4) {
 
 /* ------ Introduction End ------ */
 
+
 /* ------ About Start ------ */
 #about {
     display: grid;
@@ -171,7 +162,6 @@ a:nth-child(4) {
 }
 
 #about div:first-child {
-    /* border: 1px solid; */
     display: flex;
     justify-content: start;
     margin-left: 10rem;
@@ -213,8 +203,28 @@ a:nth-child(4) {
 .service {
     width: 25rem;
     height: 22rem;
-    border: 1px solid;
     border-radius: 10px;
+    background-color: var(--bg-color2);
+    text-align: center;
+    padding: 2rem;
+}
+
+.service:hover {
+    border: 2px solid var(--text-color2);
+}
+
+.service i {
+    font-size: 3rem;
+    color: var(--text-color2);
+}
+
+.service h3,
+p {
+    margin-top: 1.5rem;
+}
+
+.service button {
+    margin-top: 2rem;
 }
 
 /* ------ services End ------ */

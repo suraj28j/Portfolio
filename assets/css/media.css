@@ -1,28 +1,24 @@
 @media screen and (max-width:768px) {
+
     header {
         grid-template-columns: 90% 10%;
         height: auto;
     }
-
     header h2 {
         margin-left: 1rem;
     }
-
     header ul {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
         display: none;
     }
-
     header ul li {
         height: 2rem;
     }
-
     header nav {
         margin-left: 1rem;
     }
-
     header i {
         visibility: visible;
     }
@@ -32,42 +28,52 @@
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
         margin: 25% 5%;
+        height: 100%;
     }
-    #introduction div:first-child{
-        margin-left: 1rem;
+    #introduction div:first-child {
+        margin-left: 0rem;
     }
-
     #introduction div:nth-child(2) {
         grid-row: 1/2;
         margin-bottom: 3%;
     }
-
+    #introduction h1,#introduction h2 {
+        margin-top: 0rem;
+    }
+    #introduction p{
+        margin-top: 1rem;
+    }
+    #introduction button,#icons {
+        margin-top: 3rem;
+    }
+    
 
     #about {
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
+        height: 100%;
     }
-
     #about div:first-child {
         margin-left: 0rem;
         justify-content: center;
+        margin-top: 1.5rem;
     }
-    #services h2{
-        margin: 5rem 0rem;
-        text-align: center;
-    }
-
     #about div:nth-child(2) {
         margin: 1.5rem;
     }
 
 
+    #services h2 {
+        margin: 2rem 0rem;
+        text-align: center;
+    }
     #services>div {
         flex-direction: column;
         align-items: center;
-        margin: 5rem 0rem;
+        margin: 2rem 0rem;
     }
-    .service{
+    .service {
         width: 22rem;
+        padding: 2rem 1rem;
     }
 }
