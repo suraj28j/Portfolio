@@ -10,7 +10,7 @@
     --bg-color2: #262B40;
     --text-color1: #FFFFFF;
     --text-color2: #59B2F4;
-    --text-color3: #000000;
+    /* --text-color3: #000000; */
 }
 
 @font-face {
@@ -53,8 +53,8 @@ header h2 {
 
 header ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 header ul li {
@@ -155,6 +155,58 @@ a:nth-child(4) {
     box-shadow: 0px 0px 0px var(--text-color2);
 }
 
+/* ----------------------------------- */
+#typing {
+    display: flex;
+    align-items: center;
+}
+
+.write {
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.erase {
+    width: 0px;
+    max-width: max-content;
+    white-space: nowrap;
+    border-right: .05rem solid var(--text-color2);
+    overflow: hidden;
+    animation:
+        4s typing-erase 4s steps(50, end) infinite,
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing-erase {
+    0% {
+        width: 0
+    }
+
+    80% {
+        width: 100%
+    }
+
+    90%,
+    100% {
+        width: 0
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: gray
+    }
+}
+
+/* ----------------------------------- */
+
+
 /* ------ Introduction End ------ */
 
 
@@ -165,6 +217,10 @@ a:nth-child(4) {
     align-items: center;
     background-color: var(--bg-color2);
     height: 100vh;
+}
+
+#about span {
+    color: var(--text-color2);
 }
 
 #about div:first-child {
@@ -193,29 +249,29 @@ a:nth-child(4) {
     background: linear-gradient(#00ccff, #d500f9);
     animation: rotate 4s linear infinite;
 }
-#about div:first-child::after{
+
+#about div:first-child::after {
     content: '';
     position: absolute;
-    background:var(--bg-color1);
-    inset: 8px;
-    border-radius: 15px;
+    background: var(--bg-color1);
+    inset: 3px;
+    border-radius: 17px;
 }
+
 @keyframes rotate {
     from {
         transform: rotate(0deg)
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
-
 #about img {
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* border-radius: 10px; */
-    /* border: 7px double var(--text-color2); */
 }
 
 #about div:nth-child(2) {
