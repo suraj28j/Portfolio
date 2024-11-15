@@ -201,6 +201,9 @@
     #about div:nth-child(2) {
         margin: 1.5rem;
     }
+    #about p{
+        font-size: 0.9rem;
+    }
 
     #services {
         height: 100%;
