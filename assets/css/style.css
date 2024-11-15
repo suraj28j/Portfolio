@@ -10,7 +10,7 @@
     --bg-color2: #262B40;
     --text-color1: #FFFFFF;
     --text-color2: #59B2F4;
-    /* --text-color3: #000000; */
+    --text-color3: #000000;
 }
 
 @font-face {
@@ -230,7 +230,7 @@ a:nth-child(4) {
     margin-right: 8rem;
     /* width: 20rem; */
     height: 20rem;
-    padding: 0.5rem;
+    padding: 0.1rem;
     position: relative;
     /* border: 1px solid; */
     justify-content: center;
@@ -288,11 +288,15 @@ a:nth-child(4) {
 /* ------ services Start ------ */
 #services {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 #services h2 {
     margin: 5rem 10rem
+}
+
+#services span {
+    color: var(--text-color2);
 }
 
 #services>div {
@@ -331,12 +335,125 @@ p {
 /* ------ services End ------ */
 
 
-#myproject{
-    display: flex;
-    justify-content: center;
+/* ------ Project  Start ------ */
+#myproject {
     background-color: var(--bg-color2);
+    border: 1px solid var(--bg-color2);
     height: 100vh;
 }
-#myproject h2{
-    margin-top: 5rem;
+
+#myproject>div {
+    display: flex;
+    gap: 1.5rem;
+    margin: 6rem 10rem;
 }
+
+#myproject>h2 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#myproject span {
+    color: var(--text-color2);
+}
+
+.project1,
+.project2 {
+    width: 50rem;
+    height: 22rem;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: var(--bg-color1);
+    padding: 0.5rem;
+    position: relative;
+}
+
+#myproject img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.over1,
+.over2 {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    opacity: 0;
+    background: linear-gradient(var(--text-color1), var(--text-color2));
+    transition: opacity 0.5s linear;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.content {
+    color: var(--text-color3);
+    text-align: center;
+
+}
+
+.content i {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.project1:hover .over1 {
+    opacity: 0.8;
+}
+
+.project2:hover .over2 {
+    opacity: 0.7;
+}
+
+/* ------ Project  End ------ */
+
+
+/* ------ Contect Me Section Start ------ */
+#contectme {
+    background-color: var(--bg-color1);
+    height: 100vh;
+    text-align: center;
+}
+
+#contectme>h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+#contectme span {
+    color: var(--text-color2);
+}
+
+.inputCollection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    margin:3rem 18rem 0rem 18rem ;
+    padding: 2rem;
+}
+
+.inputCollection input,.inputCollection textarea{
+    color: var(--text-color1);
+    outline: 0px;
+    border: 0px;
+    padding: 1rem;
+    background-color: var(--bg-color2);
+    box-shadow: 0px 0px 5px var(--bg-color2);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--text-color2);
+}
+textarea{
+    height: 15rem;
+    grid-column: 1/span 2;
+}
+
+
+/* ------ Contect Me Section End ------ */
