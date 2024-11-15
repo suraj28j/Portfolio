@@ -281,6 +281,9 @@ a:nth-child(4) {
 #about h2 {
     font-size: 2rem;
 }
+#about p{
+    font-size: 1.1rem;
+}
 
 /* ------ About End ------ */
 
