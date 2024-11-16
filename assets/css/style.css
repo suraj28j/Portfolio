@@ -454,6 +454,11 @@ textarea{
     height: 15rem;
     grid-column: 1/span 2;
 }
-
-
 /* ------ Contect Me Section End ------ */
+
+footer{
+    height: 3rem;
+    background-color: var(--bg-color2);
+    text-align: center;
+    line-height: 3rem;
+}
