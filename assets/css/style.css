@@ -181,11 +181,9 @@ a:nth-child(4) {
     0% {
         width: 0
     }
-
     80% {
         width: 100%
     }
-
     90%,
     100% {
         width: 0
@@ -198,7 +196,6 @@ a:nth-child(4) {
     to {
         border-color: transparent
     }
-
     50% {
         border-color: gray
     }

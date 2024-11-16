@@ -22,19 +22,40 @@ let nav_contact = document.getElementById("nav_contact");
 
 
 nav_home.addEventListener('click', () => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
 })
 nav_about.addEventListener('click', () => {
-    window.scrollTo(0, 800);
+    window.scroll({
+        top: 800,
+        left: 0,
+        behavior: "smooth",
+      });
 })
 nav_services.addEventListener('click', () => {
-    window.scrollTo(0, 1500);
+    window.scroll({
+        top: 1500,
+        left: 0,
+        behavior: "smooth",
+      });
 })
 nav_projects.addEventListener('click', () => {
-    window.scrollTo(0, 2300);
+    window.scroll({
+        top: 2300,
+        left: 0,
+        behavior: "smooth",
+      });
 })
 nav_contact.addEventListener('click', () => {
-    window.scrollTo(0, 3000);
+    window.scroll({
+        top: 3000,
+        left: 0,
+        behavior: "smooth",
+      });
 })
 
 
