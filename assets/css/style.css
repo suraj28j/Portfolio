@@ -312,10 +312,12 @@ a:nth-child(4) {
     background-color: var(--bg-color2);
     text-align: center;
     padding: 2rem;
+    border: 2px solid var(--bg-color2);
+    transition: all 0.4s linear;
 }
 
 .service:hover {
-    border: 2px solid var(--text-color2);
+    border-color: var(--text-color2);
 }
 
 .service i {
