@@ -67,5 +67,6 @@ tour.addEventListener('click', () => {
     window.open('https://tourfinder.vercel.app/', "_blank")
 })
 ecommerce.addEventListener('click', () => {
-    window.open('https://ecommerce-self-gamma-14.vercel.app/', "_blank")
+    // window.open('https://ecommerce-self-gamma-14.vercel.app/', "_blank")
+    window.open('https://mart-ecom-beryl.vercel.app/', "_blank")
 })
